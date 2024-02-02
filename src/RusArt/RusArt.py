@@ -11,7 +11,7 @@ import cv2
 import pandas as pd
 import io
 
-MODEL_WEIGHTS = "./baseline.pt"
+MODEL_WEIGHTS = "./swin_t_last.pt"
 
 
 img_mode = st.radio(
