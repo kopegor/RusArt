@@ -1,0 +1,51 @@
+[tool.briefcase]
+project_name = "RusArt"
+bundle = "com.RusSrt"
+version = "0.0.1"
+url = "https://github.com/kopegor/RusArt"
+license = "BSD license"
+author = 'Egor Koptelov'
+author_email = "egorkoptelov99@gmail.com"
+
+[tool.briefcase.app.RusArt]
+formal_name = "RusArt"
+description = "This is an application for classification type of russian art via image"
+icon = "src/RusArt/resources/RusArt"
+sources = ['src/RusArt']
+requires = [
+]
+
+
+[tool.briefcase.app.RusArt.macOS]
+requires = [
+    'std-nslog~=1.0.0'
+]
+
+[tool.briefcase.app.RusArt.linux]
+requires = []
+
+[tool.briefcase.app.RusArt.linux.appimage]
+system_requires = []
+linuxdeploy_plugins = []
+
+[tool.briefcase.app.RusArt.linux.flatpak]
+
+[tool.briefcase.app.RusArt.windows]
+requires = [
+    scikit-learn==1.2.1,
+    numpy==1.23.5,
+    tqdm==4.65.0,
+    pandas==1.5.3,
+    lightgbm==4.1.0,
+    tqdm,
+    torch,
+    torchvision,
+    opencv-python
+]
+
+# Mobile deployments
+[tool.briefcase.app.RusArt.iOS]
+supported = false
+
+[tool.briefcase.app.RusArt.android]
+supported = false
