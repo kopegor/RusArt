@@ -251,6 +251,11 @@ def main():
     Function with whole pipeline of model training
     :return:
     """
+    # define paths
+    MODEL_WEIGHTS = "./baseline.pt"
+    TRAIN_DATASET = "./data/train/"
+    TRAIN_CSV = "./data/private_info/train.csv"
+
     # init image transforms
     trans = transforms.Compose(
         [
