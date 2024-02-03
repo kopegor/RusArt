@@ -50,3 +50,11 @@ if image is not None:
     # get predicted art category of image
     art_type = get_category(image, MODEL_WEIGHTS)
     st.write(f"***Тип произведения искуссства на фото***: {art_type}")
+
+    # load art categories descriptions
+    descr = pd.read_excel("C:\\Users\Egor\Projects\Russian_art_hack\RusArt\src\RusArt\\art_types_description.xlsx")
+
+    # checking for description presence for predicted art_type
+    if art_type in descr["art_type"].values:
+        image_descr = descr[descr["art_type"] == art_type].description.values[0]
+        st.write(image_descr)
