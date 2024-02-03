@@ -7,7 +7,6 @@ import streamlit as st
 from utils import init_model, ArtDataset, get_category
 
 from PIL import Image
-import cv2
 import pandas as pd
 import io
 

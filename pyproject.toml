@@ -13,6 +13,16 @@ description = "This is an application for classification type of russian art via
 icon = "src/RusArt/resources/RusArt"
 sources = ['src/RusArt']
 requires = [
+    'scikit-learn',
+    'numpy',
+    'tqdm',
+    'pandas',
+    'tqdm',
+    'torch',
+    'torchvision',
+    'openpyxl',
+    'streamlit',
+    'tqdm'
 ]
 
 
@@ -39,7 +49,10 @@ requires = [
     'tqdm',
     'torch',
     'torchvision',
-    'opencv-python'
+    'opencv-python',
+    'openpyxl',
+    'streamlit',
+    'tqdm'
 ]
 
 # Mobile deployments

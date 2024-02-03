@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Briefcase-Version: 0.3.8
+Name: RusArt
+Formal-Name: RusArt
+App-ID: com.RusSrt.RusArt
+Version: 0.0.1
+Home-page: https://github.com/kopegor/RusArt
+Author: Egor Koptelov
+Author-email: egorkoptelov99@gmail.com
+Summary: This is an application for classification type of russian art via image

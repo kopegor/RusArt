@@ -10,7 +10,6 @@ import os
 @main.command("hello")
 @configurator_options
 def main_hello(**kwargs):
-    """Runs the Hello World script."""
     bootstrap.load_config_options(flag_options=kwargs)
     app_directory = Path(__file__).parent
     filename = str(Path(app_directory, 'RusArt.py'))
